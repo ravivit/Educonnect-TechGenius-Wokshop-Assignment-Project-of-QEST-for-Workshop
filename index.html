@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - EduConnect</title>
+    <style>
+        /* Body Styling */
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            margin: 0;
+        }
+        /* Logo Container */
+        
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 10px;
+            margin-top: 2cm;
+            /* Moved the image 2cm down */
+        }
+        /* Image Styling */
+        
+        .logo {
+            width: 120px;
+            /* Increased image size */
+            height: auto;
+            margin-bottom: 1cm;
+            /* 1cm gap between image and headline */
+        }
+        /* "EduConnect TechGenius Workshop" Headline Styling */
+        
+        .headline {
+            font-size: 48px;
+            /* Increased size of headline */
+            font-weight: bold;
+            color: #fff;
+            padding: 15px;
+            background-color: #4A90E2;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 1cm;
+            /* Adjusted to make space between headline and login box */
+        }
+        
+        .headline:hover {
+            background-color: #357ABD;
+        }
+        /* Login Box */
+        
+        .login-container {
+            background: white;
+            padding: 30px;
+            width: 380px;
+            /* Increased width to match headline size */
+            text-align: center;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            top: 10px;
+            /* Adjusted to push the login box down below the headline */
+        }
+        /* Input Styling */
+        
+        .input-box {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        /* Buttons */
+        
+        .login-btn {
+            width: 100%;
+            padding: 12px;
+            background: #4A90E2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        .login-btn:hover {
+            background: #357ABD;
+        }
+        /* Links */
+        
+        .link {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        .link:hover {
+            text-decoration: underline;
+        }
+        /* Rectangle Effect for Text */
+        
+        .rectangle {
+            padding: 20px;
+            font-size: 28px;
+            /* Increased size of text inside rectangle */
+            font-weight: bold;
+            color: white;
+            background-color: #4A90E2;
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        
+        .rectangle:hover {
+            background-color: #357ABD;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Logo and Headline Container -->
+    <div class="logo-container">
+        <!-- Logo Image -->
+        <a href="https://ibb.co/nNFvtsgC">
+            <img src="https://i.ibb.co/nNFvtsgC/Educonnect-techgenius-logo.png" alt="Educonnect-techgenius-logo" class="logo">
+        </a>
+        <!-- Headline Text -->
+        <div class="headline">EduConnect TechGenius Workshop</div>
+    </div>
+
+    <!-- Login Box -->
+    <div class="login-container">
+        <h2>Login</h2>
+        <input type="text" class="input-box" id="username" placeholder="Username">
+        <input type="email" class="input-box" id="email" placeholder="Email">
+        <input type="password" class="input-box" id="password" placeholder="Password">
+        <button class="login-btn" onclick="login()">Login</button>
+
+        <a href="#" class="link">Forgot Password?</a>
+        <a href="#" class="link">Sign Up</a>
+    </div>
+
+    <script>
+        function login() {
+            window.location.href = "https://dastaan.store/";
+        }
+    </script>
+
+</body>
+
+</html>
